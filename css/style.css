@@ -1194,3 +1194,59 @@ ul.timeline {
  .date-cards .btn a:hover{
      color: #3C3633;
  }
+ .gift .doa{
+     padding: 0px 150px;
+ }
+ .gift img{
+     width: 200px;
+     margin-left: 30%;
+ }
+ .contact iframe{
+     width: 600px;
+ }
+
+ /* RESPOSIVE!!! */
+ @media only screen and (max-width: 576px) {
+     .plane .col-md-3 p{
+          margin: 0px;
+     }
+     .groomsmen span{
+          padding:0px;
+     }
+     .groomsmen .custom-span{
+          padding: 0px;
+     }
+     .res-mob{
+          order: -1;
+     }
+     .res-mar{
+          margin-top: 20px;
+     }
+     ul.timeline:before{
+          left: 10px;
+     }
+     ul.timeline > li:before{
+          left: -4px;
+     }
+     ul.timeline > li{
+          padding-left: 30px;
+          margin-right: 5px;
+     }
+     .says{
+          padding-top: 20px;
+     }
+     .gift{
+          padding:0px;
+          padding-top: 20px;
+     }
+     .gift .doa{
+          padding: 20px;
+     }
+     .gift img{
+          width: 150px;
+          margin-left: 30%;
+     }
+     .contact iframe{
+          width: 385px;
+     }
+ }
