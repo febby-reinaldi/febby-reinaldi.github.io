@@ -641,7 +641,7 @@ ul.search li a:hover {
      background: url(../images/flowerbg.jpg);
      background-position: center;
      background-repeat: no-repeat;
-     background-size: 100% 100%;
+     background-size: cover;
      padding: 90px 0;
 }
 
@@ -1248,5 +1248,11 @@ ul.timeline {
      }
      .contact iframe{
           width: 385px;
+     }
+     .about{
+          background-position: 0;
+     }
+     .titlepage h2{
+          line-height: 60px;
      }
  }
