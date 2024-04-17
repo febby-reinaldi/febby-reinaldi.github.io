@@ -111,13 +111,13 @@ function toggleDisplay() {
     divs[i].style.display = display;
   }
 }
-// var source = "./music/song.mp3"
-//  var audio = document.createElement("audio");
-//  //
-//  audio.autoplay = true;
-//  //
-//  audio.load()
-//  audio.addEventListener("load", function() { 
-//      audio.play(); 
-//  }, true);
-//  audio.src = source;
+var source = "./music/song.mp3"
+ var audio = document.createElement("audio");
+ //
+ audio.autoplay = true;
+ //
+ audio.load()
+ audio.addEventListener("load", function() { 
+     audio.play(); 
+ }, true);
+ audio.src = source;
