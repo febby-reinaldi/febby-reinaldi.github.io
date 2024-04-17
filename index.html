@@ -105,7 +105,14 @@
                                        </div>
                                     </div>
                                     <p class="center pt-2">Kepada YTH</p>
-                                    <p class="center pt-2 inv">Rei</p>
+                                    <p class="center pt-2 inv" id="nama"></p>
+                                    <script>
+                                       // You can get url_string from window.location.href if you want to work with
+                                       // the URL of the current 
+                                       var url1 = new URL(window.location.href);
+                                       var c = url1.searchParams.get("to");
+                                       document.getElementById("nama").innerHTML = c;
+                                    </script>
                                  </div>
                               </div>
                            </div>
@@ -415,7 +422,7 @@
                                     <div class="col-md-12">
                                        <div class="readert">
                                           <div class="readert_img text_align_center">
-                                             <figure><img src="images/gal-4.JPG" alt="#"/></figure>
+                                             <figure><img src="images/gal-4.jpg" alt="#"/></figure>
                                           </div>
                                        </div>
                                     </div>
@@ -430,7 +437,7 @@
                                     <div class="col-md-12">
                                        <div class="readert">
                                           <div class="readert_img text_align_center">
-                                             <figure><img src="images/gal-5.JPG" alt="#"/></figure>
+                                             <figure><img src="images/gal-5.jpg" alt="#"/></figure>
                                           </div>
                                        </div>
                                     </div>
@@ -519,6 +526,7 @@
       <!--  footer -->
       <!-- end footer -->
       <!-- Javascript files-->
+      
       <script src="js/jquery.min.js"></script>
       <script src="js/bootstrap.bundle.min.js"></script>
       <script src="js/jquery-3.0.0.min.js"></script>
