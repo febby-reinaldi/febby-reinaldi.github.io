@@ -1255,4 +1255,8 @@ ul.timeline {
      .titlepage h2{
           line-height: 60px;
      }
+     .readert_img figure img{
+          width: 320px;
+          max-height:0px;
+     }
  }
