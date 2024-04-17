@@ -1204,6 +1204,9 @@ ul.timeline {
  .contact iframe{
      width: 600px;
  }
+ .build_box .quote_btn{
+     border: 0px;
+ }
 
  /* RESPOSIVE!!! */
  @media only screen and (max-width: 576px) {
@@ -1254,9 +1257,5 @@ ul.timeline {
      }
      .titlepage h2{
           line-height: 60px;
-     }
-     .readert_img figure img{
-          width: 320px;
-          max-height:471px;
      }
  }
