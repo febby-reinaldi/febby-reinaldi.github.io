@@ -91,3 +91,33 @@ var x = setInterval(function() {
   }
 },
 1000)
+var show_btn = document.querySelector('#show-div-btn');
+var hide_btn = document.querySelector('#hide-div-btn');
+
+window.onload = function(){
+ document.getElementById('hide-div-btn').click();
+}
+show_btn.addEventListener('click', toggleDisplay);
+hide_btn.addEventListener('click', toggleDisplay);
+
+function toggleDisplay() {
+  var display = this.id == 'show-div-btn' ? 'block' : 'none';
+  var divs = document.querySelectorAll('.toggled_div');
+
+  show_btn.disabled = (display == 'block');
+  hide_btn.disabled = (display == 'none');
+
+  for (var i = 0; i < divs.length; i++) {
+    divs[i].style.display = display;
+  }
+}
+// var source = "./music/song.mp3"
+//  var audio = document.createElement("audio");
+//  //
+//  audio.autoplay = true;
+//  //
+//  audio.load()
+//  audio.addEventListener("load", function() { 
+//      audio.play(); 
+//  }, true);
+//  audio.src = source;
