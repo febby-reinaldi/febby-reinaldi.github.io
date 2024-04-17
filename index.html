@@ -31,8 +31,9 @@
    </head>
    <!-- body -->
    <body class="main-layout">
-      <iframe src="music/song.m4a" allow="autoplay" style="display:none" id="iframeAudio">
-      </iframe>
+      <audio autoplay >
+         <source src="music/song.mp3" type="audio/mp3">
+      </audio>
       <!-- loader  -->
       <!-- <div class="loader_bg">
          <div class="loader"><img src="images/loading.gif" alt="#"/></div>
@@ -40,54 +41,10 @@
       <!-- end loader -->
       <!-- header -->
       <header class="full_bg">
-         <!-- header inner -->
          <div class="header">
             <div class="container">
-               <!-- <div class="row">
-                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
-                     <div class="full">
-                        <div class="center-desk">
-                           <div class="logo">
-                              <a href="index.html">2Rings</a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
-                     <nav class="navigation navbar navbar-expand-md navbar-dark ">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarsExample04">
-                           <ul class="navbar-nav mr-auto">
-                              <li class="nav-item active">
-                                 <a class="nav-link" href="index.html">Home</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="about.html">About</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="service.html">Service</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="blog.html">Blog</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="contact.html">Contact Us</a>
-                              </li>
-                           </ul>
-                        </div>
-                        <ul class="search">
-                           <li><a href="Javascript:void(0)"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-                        </ul>
-                     </nav>
-                  </div>
-               </div> -->
             </div>
          </div>
-         <!-- end header inner -->
-         <!-- end header -->
-         <!-- banner -->
          <section class="banner_main">
             <div id="myCarousel" class="carousel slide banner" data-ride="carousel">
                <div class="carousel-inner">
@@ -99,9 +56,10 @@
                                  <div class="build_box">
                                     <p class="center">The Wedding of</p>
                                     <h1 class="center">Febby &<span class="orang"> Reinaldi</span></h1>
-                                    <div class="row">
+                                    <div id="hdn" class="row">
                                        <div class="col-lg-12 col-md-12 center">
-                                          <a class="read_more quote_btn" href="Javascript:void(0)" role="button"><i class="fa fa-envelope"></i> Buka Undangan</a>
+                                          <input id="hide-div-btn" type="hidden" name="answer" class="Button"/>
+                                          <input type="button" name="answer" value="Buka Undangan" class="Button read_more quote_btn" id="show-div-btn">
                                        </div>
                                     </div>
                                     <p class="center pt-2">Kepada YTH</p>
@@ -134,7 +92,7 @@
       <!-- end banner -->
 
       <!-- our plane -->
-      <div class="plane">
+      <div class="toggled_div plane">
          <div class="container">
             <div class="row">
                <div class="col-sm-12">
@@ -183,7 +141,7 @@
       </div>
       <!-- our plane -->
       <!-- groomsmen -->
-      <div class="groomsmen">
+      <div class="toggled_div groomsmen">
          <div class="container">
             <div class="row">
                <div class="col-sm-12">
@@ -199,7 +157,7 @@
       <!-- <div class="after-sec"></div> -->
       <!-- groomsmen -->
       <!-- about -->
-      <div class="about">
+      <div class="toggled_div about">
          <div class="container ">
             <div class="row d_flex">
                <div class="col-md-5">
@@ -242,7 +200,7 @@
       </div>
       <!-- end about -->
       <!-- blog -->
-      <div class="blog">
+      <div class="toggled_div blog">
          <div class="container ">
             <!-- <div class="row">
                <div class="col-md-12">
@@ -318,7 +276,7 @@
          </div>
       <!-- end blog -->
       <!-- timeline -->
-      <div class="timeline-cont container mt-5 mb-5">
+      <div class="toggled_div timeline-cont container mt-5 mb-5">
          <div class="row">
             <div class="col-md-6 offset-md-3">
                <h1 class="center">Love Story</h1>
@@ -350,7 +308,7 @@
       </div>
       <!-- end of timeline -->
       <!-- says -->
-      <div class="says">
+      <div class="toggled_div says">
          <div class="container-fluid">
             <div class="row">
                <div class="col-md-12">
@@ -422,7 +380,7 @@
                                     <div class="col-md-12">
                                        <div class="readert">
                                           <div class="readert_img text_align_center">
-                                             <figure><img src="images/gal-4.JPG" alt="#"/></figure>
+                                             <figure><img src="images/gal-4.jpg" alt="#"/></figure>
                                           </div>
                                        </div>
                                     </div>
@@ -437,7 +395,7 @@
                                     <div class="col-md-12">
                                        <div class="readert">
                                           <div class="readert_img text_align_center">
-                                             <figure><img src="images/gal-5.JPG" alt="#"/></figure>
+                                             <figure><img src="images/gal-5.jpg" alt="#"/></figure>
                                           </div>
                                        </div>
                                     </div>
@@ -460,7 +418,7 @@
          </div>
       </div>
       <!-- end says -->
-      <div class="says gift">
+      <div class="toggled_div says gift">
          <div class="container">
             <h1 class="center" style="font-size: 60px;">Wedding Gift</h1>
             <p class="doa">Doa restu Anda merupakan karunia terindah bagi kami. Dan jika memberi adalah ungkapan tanda kasih, dengan senang hati kami menerima kado secara cashless melalui :</p>
@@ -482,7 +440,7 @@
       <!-- placeformhere -->
       <!-- endform -->
       <!--  contact -->
-      <div class="contact">
+      <div class="toggled_div contact">
          <div class="container">
             <div class="row d_flex pt-5">
                <div class="col-md-6">
@@ -513,11 +471,7 @@
                   </form>
                </div>
                <div class="col-md-6 res-mob">
-                  <!-- <div class="map_main">
-                     <div class="map-responsive">
-                        <iframe class="" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.1164882714415!2d112.57706907368558!3d-7.986904992038525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7882ddb629bfdd%3A0x54f41b09c67f2e2a!2sNIKO%20BENGKEL%20LAS%20TETER!5e0!3m2!1sid!2sid!4v1712894882053!5m2!1sid!2sid" height="378" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                     </div>
-                  </div> -->
+                  
                </div>
             </div>
          </div>
