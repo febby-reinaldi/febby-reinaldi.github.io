@@ -31,13 +31,14 @@
    </head>
    <!-- body -->
    <body class="main-layout">
-      <audio autoplay >
-         <source src="music/song.mp3" type="audio/mp3">
-      </audio>
+       <div id="pause-button">
+         <i class="fa fa-pause"></i>
+       </div>
+       <audio id="audio-player" src="music/song.mp3"></audio>
       <!-- loader  -->
-      <div class="loader_bg">
+      <!-- <div class="loader_bg">
          <div class="loader"><img src="images/loading.gif" alt="#"/></div>
-      </div>
+      </div> -->
       <!-- end loader -->
       <!-- header -->
       <header class="full_bg">
@@ -443,32 +444,23 @@
       <div class="toggled_div contact">
          <div class="container">
             <div class="row d_flex pt-5">
-               <div class="col-md-6">
-                  <div class="col-md-12">
-                     <div class="titlepage">
-                        <h2>Your Wish</h2>
-                     </div>
-                  </div>
-                  <form id="request" class="main_form">
-                     <div class="row">
-                        <div class="col-md-12 ">   
-                           <input class="contactus" placeholder="Name" type="type" name="Name"> 
-                        </div>
-                        <div class="col-md-12">
-                           <textarea class="textarea" placeholder="Message" type="type" Message="Name" style="height:150px;"></textarea>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                           <button class="send_btn">Send</button>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                           <ul class="social_icon">
-                              <li><a href="" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                              <li><a href="" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                              <li><a href="" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
-                           </ul>
-                        </div>
-                     </div>
-                  </form>
+               <div class="col-md-12">
+                  <h1 class="center footer_tit">Doa Pengantin</h1>
+                  <p class="bismillah center">بَارَكَ اللهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِى خَيْرٍ</p>
+                  <p class="doa center">Baarokallaahu laka wa baaroka ‘alaika 
+                     wa jama’a bainakumaa fii khair
+                     “Semoga Allah memberi berkah kepadamu 
+                     dan atasmu serta mengumpulkan kamu berdua 
+                     (pengantin laki-laki dan perempuan) 
+                     dalam kebaikan.”
+                  </p>
+                  <p class="harapan center">
+                     Merupakan suatu kehormatan dan kebahagiaan bagi kami sekeluarga apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada kedua mempelai. Atas kehadiran serta doa restunya, kami ucapkan terima kasih.
+                  </p>
+                  <h1 class="footer_title center">Febby & Reinaldi</h1>
+                  <p class="center love">❤️</p>
+                  <p class="center">Designed with love by :</p>
+                  <p class="center"><a href="https://www.instagram.com/remixxww_._/" target="_blank">REINALDI NUR</a></p>
                </div>
                <div class="col-md-6 res-mob">
                   
@@ -487,15 +479,5 @@
       <!-- sidebar -->
       <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="js/custom.js"></script>
-      <script>var source = "./music/song.mp3"
- var audio = document.createElement("audio");
- //
- audio.autoplay = true;
- //
- audio.load()
- audio.addEventListener("load", function() { 
-     audio.play(); 
- }, true);
- audio.src = source;</script>
    </body>
 </html>
