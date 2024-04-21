@@ -1265,6 +1265,8 @@ ul.timeline {
 
  /* RESPOSIVE!!! */
  @media only screen and (max-width: 576px) {
+  .full_bg{
+   height:650px;}
      .plane .col-md-3 p{
           margin: 0px;
      }
