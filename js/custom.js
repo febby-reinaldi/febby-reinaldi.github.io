@@ -111,13 +111,29 @@ function toggleDisplay() {
     divs[i].style.display = display;
   }
 }
-var source = "./music/song.mp3"
- var audio = document.createElement("audio");
- //
- audio.autoplay = true;
- //
- audio.load()
- audio.addEventListener("load", function() { 
-     audio.play(); 
- }, true);
- audio.src = source;
+const audio = document.getElementById("audio-player");
+const playButton = document.getElementById("show-div-btn");
+const pauseButton = document.getElementById("pause-button");
+
+function toggleButtonVisibility(showPlayButton) {
+  playButton.style.display = showPlayButton ? "block" : "none";
+  pauseButton.style.display = showPlayButton ? "none" : "block";
+}
+
+playButton.addEventListener("click", () => {
+  audio.play();
+  toggleButtonVisibility(false);
+});
+
+pauseButton.addEventListener("click", () => {
+  audio.pause();
+  toggleButtonVisibility(true);
+});
+
+audio.addEventListener("playing", () => {
+  toggleButtonVisibility(false);
+});
+
+audio.addEventListener("paused", () => {
+  toggleButtonVisibility(true);
+});
